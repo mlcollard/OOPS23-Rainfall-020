@@ -13,8 +13,6 @@ int main() {
 
     // input the hourly rainfall data
     std::vector<double> rainfall;
-    double t;
-    double m;
     double n;
     while (std::cin >> n) {
         rainfall.push_back(n);
@@ -25,8 +23,8 @@ int main() {
     }
 
     // calculate the average and heaviest rainfall
-    t = rainfall[0];
-    m = rainfall[0];
+    double t = rainfall[0];
+    double m = rainfall[0];
     for (std::vector<double>::size_type i = 1; i < rainfall.size(); ++i) {
         t += rainfall[i];
         if (rainfall[i] > m)

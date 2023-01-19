@@ -34,7 +34,7 @@ int main() {
     for (const auto rain: rainfall) {
         total += rain;
     }
-    auto average = total / rainfall.size();
+    const auto average = total / rainfall.size();
 
     // output the rainfall report
     std::cout << "| Hourly Rainfall | Inches in 100s |" << '\n';

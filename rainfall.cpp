@@ -11,18 +11,6 @@
 #include <vector>
 #include "Aggregate.hpp"
 
-// maximum of the data
-double max(const std::vector<double>& data) {
-
-    auto maximum = data[0];
-    for (const auto value: data) {
-        if (value > maximum)
-            maximum = value;
-    }
-
-    return maximum;
-}
-
 // average of the data
 double avg(const std::vector<double>& data) {
 

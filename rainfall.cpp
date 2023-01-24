@@ -9,6 +9,7 @@
 #include <iomanip>
 #include <iterator>
 #include <vector>
+#include "Aggregate.hpp"
 
 // maximum of the data
 double max(const std::vector<double>& data) {

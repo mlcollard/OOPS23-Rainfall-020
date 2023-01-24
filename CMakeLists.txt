@@ -20,7 +20,7 @@ else()
 endif()
 
 # Rainfall program
-add_executable(rainfall rainfall.cpp)
+add_executable(rainfall rainfall.cpp Aggregate.cpp)
 
 # run command
 add_custom_target(run $<TARGET_FILE:rainfall> < ${CMAKE_SOURCE_DIR}/demo.csv)

@@ -12,4 +12,7 @@
 // maximum of the data
 double max(const std::vector<double>& data);
 
+// average of the data
+double avg(const std::vector<double>& data);
+
 #endif

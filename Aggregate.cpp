@@ -17,3 +17,14 @@ double max(const std::vector<double>& data) {
 
     return maximum;
 }
+
+// average of the data
+double avg(const std::vector<double>& data) {
+
+    auto total = data[0];
+    for (const auto value: data) {
+        total += value;
+    }
+
+    return total / data.size();
+}

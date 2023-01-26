@@ -5,6 +5,7 @@
 */
 
 #include "Aggregate.hpp"
+#include <numeric>
 
 // maximum of the data
 double max(const std::vector<double>& data) {
@@ -21,10 +22,7 @@ double max(const std::vector<double>& data) {
 // average of the data
 double avg(const std::vector<double>& data) {
 
-    auto total = data[0];
-    for (const auto value: data) {
-        total += value;
-    }
+    auto total = std::accumulate(data.begin(), data.end(), 0.0);
 
     return total / data.size();
 }
